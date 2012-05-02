@@ -1,21 +1,21 @@
-public class rajamantri extends Activity {
+public class RajaMantriChorSipahi extends Activity {
     
 	
 	@Override
-	public void onbackpressed() {
+	public void onBackPressed() {
 		
 
 		
 	}
 
 	@Override
-	protected void onpostresume() {
+	protected void onPostResume() {
 		// TODO Auto-generated method stub
 		super.onpostresume();
 	}
 
 	@Override
-	public boolean onkeydown(int keyCode, KeyEvent event) {
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle("Exit game!");
 		dialog.setMessage("Are you sure you want to exit the game?");
@@ -40,7 +40,7 @@ public class rajamantri extends Activity {
 	}
 
 	@Override
-	public void onlowmemory() {
+	public void onLowMemory() {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle("Low memory!");
 		dialog.setMessage("Too many apps open, kindly close some other apps and try again!");
@@ -211,12 +211,12 @@ public class rajamantri extends Activity {
  		public void onClick(View v) {
  			// TODO Auto-generated method stub
  		setContentView(R.layout.rmcsp);	
- 		 // Create the adView
+ 		     // Create the adView
 	    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
-	    // Lookup your LinearLayout assuming it’s been given
-	    // the attribute android:id="@+id/mainLayout"
+	           // Lookup your LinearLayout assuming it’s been given
+	          // the attribute android:id="@+id/mainLayout"
 	    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutPlayer);
-	    // Add the adView to it
+	       // Add the adView to it
 	    layout.addView(adView);
 	    // Initiate a generic request to load it with an ad
 	    adView.loadAd(new AdRequest());
@@ -281,12 +281,12 @@ public class rajamantri extends Activity {
 					setContentView(R.layout.rmcsgnew);	
 					 // Create the adView
 				    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
-				    // Lookup your LinearLayout assuming it’s been given
-				    // the attribute android:id="@+id/mainLayout"
+				       // Lookup your LinearLayout assuming it’s been given
+				      // the attribute android:id="@+id/mainLayout"
 				    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
 				    // Add the adView to it
 				    layout.addView(adView);
-				    // Initiate a generic request to load it with an ad
+				   // Initiate a generic request to load it with an ad
 				    adView.loadAd(new AdRequest());
 
 					txtTurn = (TextView)findViewById(R.id.txtTurn);
